@@ -3,11 +3,11 @@ import Link from "next/link";
 export default function Donate() {
   return (
     <section className="bg-gray-500 text-white py-20 px-4">
-      <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         
         {/* Left Content */}
-        <div className="space-y-6">
-          <h2 className="text-4xl font-bold leading-tight">
+        <div className="space-y-3">
+          <h2 className="text-3xl font-bold leading-tight">
             Be Part of the Change
           </h2>
 
@@ -19,14 +19,14 @@ export default function Donate() {
           <div className="flex flex-col sm:flex-row gap-4 pt-4">
             <Link
               href="/missions"
-              className="bg-brand-red hover:bg-brand-red/90 text-white font-semibold px-8 py-4 rounded-lg text-center transition"
+              className="bg-brand-red hover:bg-brand-red/90 text-white font-semibold px-5 py-3 rounded-lg text-center transition"
             >
               Support a Cause
             </Link>
 
             <Link
               href="/contact"
-              className="border border-slate-400 text-white font-semibold px-8 py-4 rounded-lg text-center hover:bg-white/10 transition"
+              className="border border-slate-400 text-white font-semibold px-5 py-3 rounded-lg text-center hover:bg-white/10 transition"
             >
               Partner With Us
             </Link>

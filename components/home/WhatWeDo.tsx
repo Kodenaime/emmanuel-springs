@@ -18,7 +18,7 @@ export default function WhatWeDo() {
         </div>
 
         {/* Cards */}
-        <div className="grid gap-8 md:grid-cols-3">
+        <div className="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           
           {/* Missions */}
           <div className="bg-white rounded-xl p-8 shadow-sm hover:shadow-md transition flex flex-col justify-between">
@@ -38,7 +38,7 @@ export default function WhatWeDo() {
             </div>
 
             <Link
-              href="/missions"
+              href="/programs/missions"
               className="mt-10 font-semibold text-brand-red hover:underline"
             >
               Explore Missions →
@@ -63,7 +63,7 @@ export default function WhatWeDo() {
             </div>
 
             <Link
-              href="/farm"
+              href="/programs/farm"
               className="mt-10 font-semibold text-green-700 hover:underline"
             >
               Visit Farm Gate →
@@ -88,7 +88,7 @@ export default function WhatWeDo() {
             </div>
 
             <Link
-              href="/travels"
+              href="/programs/travels"
               className="mt-10 font-semibold text-slate-700 hover:underline"
             >
               Plan a Trip →

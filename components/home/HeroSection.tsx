@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function HeroSection() {
   return (
-    <section className="grid grid-cols-1 md:grid-cols-3 min-h-[calc(100vh-72px)]">
+    <section className="grid grid-cols-1 lg:grid-cols-3 min-h-[calc(100vh-72px)]">
       
       {/* Missions */}
       <div

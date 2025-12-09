@@ -37,7 +37,7 @@ export const MOCK_STORIES: Story[] = [
     category: "Feeding",
     excerpt:
       "Over 120 widows received hot meals, groceries, and prayer support during our quarterly outreach.",
-    image: "/stories/widows-outreach.jpg",
+    image: "/image1.jpg",
     date: "2025-02-10",
   },
   {
@@ -46,7 +46,7 @@ export const MOCK_STORIES: Story[] = [
     category: "Empowerment",
     excerpt:
       "Young adults were trained in digital skills, tailoring, and soap production to help them become self-reliant.",
-    image: "/stories/youth-empowerment.jpg",
+    image: "/image2.jpg",
     date: "2025-03-18",
   },
   {
@@ -55,7 +55,7 @@ export const MOCK_STORIES: Story[] = [
     category: "Discipleship",
     excerpt:
       "Weekly discipleship classes were launched in three rural communities to strengthen spiritual growth.",
-    image: "/stories/discipleship-class.jpg",
+    image: "/image3.jpg",
     date: "2025-04-05",
   },
   {
@@ -64,7 +64,7 @@ export const MOCK_STORIES: Story[] = [
     category: "Feeding",
     excerpt:
       "Rapid response feeding mission delivered food packs to families affected by seasonal flooding.",
-    image: "/stories/emergency-feeding.jpg",
+    image: "/image4.jpg",
     date: "2025-05-22",
   },
 ];

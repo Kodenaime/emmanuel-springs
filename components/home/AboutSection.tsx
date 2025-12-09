@@ -1,7 +1,9 @@
+import Image from "next/image";
+
 export default function AboutSection() {
   return (
     <section className="bg-white py-20 px-4">
-      <div className="max-w-7xl mx-auto grid gap-16 md:grid-cols-2 items-center">
+      <div className="max-w-7xl mx-auto grid gap-16 grid-cols-1 lg:grid-cols-2 items-center">
         
         {/* Text Content */}
         <div className="space-y-6">
@@ -27,12 +29,18 @@ export default function AboutSection() {
           </p>
         </div>
 
-        {/* Visual Block */}
-        <div className="bg-slate-200 rounded-lg h-[420px] flex items-center justify-center">
-          <span className="text-slate-500 text-sm">
-            About Image Placeholder
-          </span>
+       
+        <div className="relative h-[420px] rounded-lg overflow-hidden shadow-xl">
+          <Image
+            src="/about.jpeg" 
+            alt="Volunteers at Emmanuel Springs"
+            fill
+            className="object-cover"
+            sizes="(max-width: 768px) 100vw, 50vw" 
+            priority 
+          />
         </div>
+
       </div>
     </section>
   );

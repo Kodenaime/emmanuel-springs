@@ -5,6 +5,7 @@ import HeroSection from "@/components/home/HeroSection";
 import ImpactStats from "@/components/home/ImpactStats";
 import WhatWeDo from "@/components/home/WhatWeDo";
 import { GalleryCarousel } from "@/components/layout/GalleryCarousel";
+import ObjectivesSection from "@/components/home/ObjectivesSection";
 
 export default function HomePage() {
   return (
@@ -12,6 +13,7 @@ export default function HomePage() {
       <HeroSection />
       <AboutSection />
       <WhatWeDo />
+      <ObjectivesSection />
       <ImpactStats />
       <FeaturedStories />
       <Donate />

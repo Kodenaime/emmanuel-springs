@@ -7,10 +7,10 @@ import Autoplay from 'embla-carousel-autoplay';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 const images = [
-  '/gallery/image-1.jpg',
-  '/gallery/image-2.jpg',
-  '/gallery/image-3.jpg',
-  '/gallery/image-4.jpg',
+  '/gallery/gallery1.png',
+  '/gallery/gallery2.png',
+  '/gallery/gallery3.png',
+  '/gallery/gallery4.png',
 ];
 
 export const GalleryCarousel = () => {
