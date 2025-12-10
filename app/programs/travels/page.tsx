@@ -1,3 +1,4 @@
+import Donate from "@/components/home/Donate";
 import { MOCK_TRIPS } from "@/lib/data";
 
 export default function TravelsPage() {
@@ -92,6 +93,9 @@ export default function TravelsPage() {
           </div>
         </section>
       </div>
+
+      <Donate />
+
     </main>
   );
 }

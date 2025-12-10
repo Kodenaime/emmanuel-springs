@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { MOCK_FARM_ITEMS } from "@/lib/data";
+import Donate from "@/components/home/Donate";
 
 export default function FarmPage() {
   const [activeTab, setActiveTab] = useState<"products" | "trainings">(
@@ -124,6 +125,9 @@ export default function FarmPage() {
           ))}
         </section>
       </div>
+
+      <Donate />
+
     </main>
   );
 }

@@ -1,12 +1,21 @@
+import Donate from "@/components/home/Donate";
+import ContactSection from "@/components/resources/ContactSection";
+import Image from "next/image";
+
 export default function ResourcesPage() {
   return (
     <main className="bg-cream py-16 px-4">
       <div className="max-w-5xl mx-auto grid gap-16 md:grid-cols-2 items-center">
-        {/* Book Cover Placeholder */}
-        <div className="bg-slate-200 rounded-lg h-[420px] flex items-center justify-center">
-          <span className="text-slate-500 text-sm">
-            Book Cover Placeholder
-          </span>
+        {/* Book Cover */}
+        <div className="relative h-[500px] rounded-lg overflow-hidden shadow-xl">
+          <Image
+            src="/book.jpeg" 
+            alt="Volunteers at Emmanuel Springs"
+            fill
+            className="object-cover"
+            sizes="(max-width: 768px) 100vw, 50vw" 
+            priority 
+          />
         </div>
 
         {/* Content */}
@@ -22,7 +31,7 @@ export default function ResourcesPage() {
           </p>
 
           <a
-            href="https://selar.co"
+            href="https://selar.com/945nq2r27v"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center rounded-full bg-brand-red px-8 py-3 text-white font-semibold hover:opacity-90 transition"
@@ -31,6 +40,11 @@ export default function ResourcesPage() {
           </a>
         </div>
       </div>
+
+      <ContactSection /> 
+
+      <Donate />
+
     </main>
   );
 }

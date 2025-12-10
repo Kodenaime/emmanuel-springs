@@ -18,14 +18,14 @@ export default function Donate() {
 
           <div className="flex flex-col sm:flex-row gap-4 pt-4">
             <Link
-              href="/missions"
+              href="/donate"
               className="bg-brand-red hover:bg-brand-red/90 text-white font-semibold px-5 py-3 rounded-lg text-center transition"
             >
               Support a Cause
             </Link>
 
             <Link
-              href="/contact"
+              href="/resources/#contact"
               className="border border-slate-400 text-white font-semibold px-5 py-3 rounded-lg text-center hover:bg-white/10 transition"
             >
               Partner With Us

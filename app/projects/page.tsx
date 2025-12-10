@@ -1,3 +1,6 @@
+import Donate from "@/components/home/Donate";
+import MissionFeedsCampaign from "@/components/projects/MissionFeedscampaign";
+
 export default function ProjectsPage() {
   const projects = [
     {
@@ -24,18 +27,25 @@ export default function ProjectsPage() {
           </p>
         </div>
 
-        {projects.map((project, index) => (
-          <div key={index} className="bg-white rounded-xl p-8 shadow space-y-6">
-            <h2 className="text-2xl font-semibold text-navy">
-              {project.title}
-            </h2>
-            <p className="text-slate-600 leading-relaxed">
-              {project.description}
-            </p>
-          </div>
-        ))}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+          {projects.map((project, index) => (
+            <div key={index} className="bg-white rounded-xl p-8 shadow space-y-6">
+              <h2 className="text-2xl font-semibold text-navy">
+                {project.title}
+              </h2>
+              <p className="text-slate-600 leading-relaxed">
+                {project.description}
+              </p>
+            </div>
+          ))}
+        </div>
 
-      </div>
+        <MissionFeedsCampaign />
+
+      </div>  
+
+      <Donate />
+
     </main>
   );
 }

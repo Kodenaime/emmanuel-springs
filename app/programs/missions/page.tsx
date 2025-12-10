@@ -4,6 +4,8 @@ import { useState } from "react";
 import { MOCK_STORIES } from "@/lib/data";
 import StoryCard from "@/components/missions/StoryCard";
 import CategoryFilter from "@/components/missions/CategoryFilter";
+import Donate from "@/components/home/Donate";
+
 
 export default function MissionsPage() {
   const [selectedCategory, setSelectedCategory] = useState("All");
@@ -35,7 +37,7 @@ export default function MissionsPage() {
           onChange={setSelectedCategory}
         />
 
-        {/* Stories Grid */}
+        {/* Stories Grid */}Don
         <section className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {filteredStories.map((story) => (
             <StoryCard key={story.id} story={story} />
@@ -43,23 +45,7 @@ export default function MissionsPage() {
         </section>
 
         {/* Donation Section */}
-        <section className="mt-20 bg-white rounded-lg p-8 shadow-sm">
-          <h2 className="text-2xl font-bold text-navy mb-4">
-            Support Our Mission
-          </h2>
-
-          <p className="text-slate-700 mb-6 max-w-2xl">
-            Your generous donations help us feed the hungry, empower
-            families, and spread hope. You can support our work using
-            the bank details below.
-          </p>
-
-          <div className="space-y-2 text-slate-800 font-medium">
-            <p>Bank Name: GTBank</p>
-            <p>Account Name: Emmanuel Foundation</p>
-            <p>Account Number: 0123456789</p>
-          </div>
-        </section>
+        <Donate />
       </div>
     </main>
   );
