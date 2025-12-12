@@ -11,6 +11,13 @@ export interface Story {
   date: string;
 }
 
+export interface Project {
+  id: string;
+  title: string;
+  description: string;
+  image: string;
+}
+
 export interface FarmItem {
   id: string;
   title: string;
@@ -33,11 +40,11 @@ export interface Trip {
 export const MOCK_STORIES: Story[] = [
   {
     id: "story-1",
-    title: "Widows Outreach Program",
+    title: "Community Outreach Program",
     category: "Feeding",
     excerpt:
-      "Over 120 widows received hot meals, groceries, and prayer support during our quarterly outreach.",
-    image: "/image1.jpg",
+      "A large community received hot meals, groceries, and prayer support during our quarterly outreach.",
+    image: "/about.jpeg",
     date: "2025-02-10",
   },
   {
@@ -55,7 +62,7 @@ export const MOCK_STORIES: Story[] = [
     category: "Discipleship",
     excerpt:
       "Weekly discipleship classes were launched in three rural communities to strengthen spiritual growth.",
-    image: "/image3.jpg",
+    image: "/image8.jpeg",
     date: "2025-04-05",
   },
   {
@@ -64,9 +71,28 @@ export const MOCK_STORIES: Story[] = [
     category: "Feeding",
     excerpt:
       "Rapid response feeding mission delivered food packs to families affected by seasonal flooding.",
-    image: "/image4.jpg",
+    image: "/about.jpeg",
     date: "2025-05-22",
   },
+];
+
+
+export const MOCK_PROJECTS: Project[] = [
+  {
+    id: "project-1",
+    title: "Mission to Empower 1000 Needy",
+    description:
+      "A mission to empower 1000 needy people with food, clothing, and prayer support.",
+    image: "/project1.jpeg",
+  },
+  {
+    id: "story-2",
+    title: "Peace of Land with Peace of Mind", 
+    description:
+      "Mission farmgate. Own a prime land today with prime opportunities.",
+    image: "/project2.jpeg",
+  },
+  
 ];
 
 
@@ -74,21 +100,61 @@ export const MOCK_STORIES: Story[] = [
 export const MOCK_FARM_ITEMS: FarmItem[] = [
   {
     id: "farm-1",
-    title: "Organic Fresh Vegetables",
+    title: "Full grown Chicken",
     type: "Product",
     description:
-      "Freshly harvested vegetables grown naturally without chemical fertilizers.",
-    image: "/farm/vegetables.jpg",
-    priceLabel: "₦2,500 per basket",
+      "Full grown chicken for sale.",
+    image: "/image6.jpeg",
+    priceLabel: "₦20,000 ",
+    inStock: true,
+  },
+  {
+    id: "farm-5",
+    title: "Liquid Soap",
+    type: "Product",
+    description:
+      "Freshly made liquid soap for personal use.",
+    image: "/soap2.jpeg",
+    priceLabel: "₦15,000 per 5liters",
+    inStock: true,
+  },
+  {
+    id: "farm-6",
+    title: "Full Grown Turkey",
+    type: "Product",
+    description:
+      "Full grown turkey for sale.",
+    image: "/image7.jpeg",
+    priceLabel: "₦60,000",
+    inStock: true,
+  },
+  {
+    id: "farm-7",
+    title: "Medicinal Plant Nursery",
+    type: "Product",
+    description:
+      "Medicinal plant nursery for sale.",
+    image: "/gallery3.png",
+    priceLabel: "₦20,000",
+    inStock: true,
+  },
+  {
+    id: "farm-8",
+    title: "Chicken Farming Training",
+    type: "Training",
+    description:
+      "Hands-on training program teaching modern chicken farming techniques.",
+    image: "/image6.jpeg",
+    priceLabel: "₦15,000 per session",
     inStock: true,
   },
   {
     id: "farm-2",
-    title: "Catfish Farming Training",
+    title: "Rabbit Farming Training",
     type: "Training",
     description:
-      "Hands-on training program teaching modern catfish farming techniques.",
-    image: "/farm/catfish.jpg",
+      "Hands-on training program teaching modern rabbit farming techniques.",
+    image: "/image5.jpeg",
     priceLabel: "₦15,000 per session",
     inStock: true,
   },
@@ -98,18 +164,18 @@ export const MOCK_FARM_ITEMS: FarmItem[] = [
     type: "Training",
     description:
       "Practical class teaching liquid and bar soap production for income generation.",
-    image: "/farm/soap-making.jpg",
+    image: "/soap2.jpeg",
     priceLabel: "₦8,000 per participant",
     inStock: false,
   },
   {
     id: "farm-4",
-    title: "Snail Farming Starter Kit",
-    type: "Product",
+    title: "Medicinal Plant Nursery",
+    type: "Training",
     description:
-      "Complete starter package for beginners interested in snail farming.",
-    image: "/farm/snail-farming.jpg",
-    priceLabel: "₦20,000 per kit",
+      "Hands-on training program teaching modern medicinal plant nursery techniques.",
+    image: "/gallery3.png",
+    priceLabel: "₦30,000 per participant",
     inStock: true,
   },
 ];

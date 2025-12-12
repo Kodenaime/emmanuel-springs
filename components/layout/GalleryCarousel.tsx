@@ -11,6 +11,13 @@ const images = [
   '/gallery/gallery2.png',
   '/gallery/gallery3.png',
   '/gallery/gallery4.png',
+  '/image5.jpeg',
+  '/image6.jpeg', 
+  '/image7.jpeg',
+  '/image8.jpeg',
+  '/image9.jpeg',
+  '/soap1.jpeg',
+  '/soap2.jpeg',
 ];
 
 export const GalleryCarousel = () => {

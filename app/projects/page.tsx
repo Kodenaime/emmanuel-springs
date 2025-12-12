@@ -1,5 +1,7 @@
 import Donate from "@/components/home/Donate";
 import MissionFeedsCampaign from "@/components/projects/MissionFeedscampaign";
+import ProjectCard from "@/components/projects/ProjectCard";
+import { MOCK_PROJECTS } from "@/lib/data";
 
 export default function ProjectsPage() {
   const projects = [
@@ -41,6 +43,13 @@ export default function ProjectsPage() {
         </div>
 
         <MissionFeedsCampaign />
+
+        {/* Projects Grid */}
+        <section className="grid gap-8 grid-cols-1">
+          {MOCK_PROJECTS.map((project) => (
+            <ProjectCard key={project.id} project={project} />
+          ))}
+        </section>
 
       </div>  
 

@@ -32,7 +32,7 @@ export default function AboutSection() {
        
         <div className="relative h-[420px] rounded-lg overflow-hidden shadow-xl">
           <Image
-            src="/about.jpeg" 
+            src="/mainabout.jpeg" 
             alt="Volunteers at Emmanuel Springs"
             fill
             className="object-cover"
