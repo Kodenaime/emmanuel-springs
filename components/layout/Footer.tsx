@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { Facebook, Instagram, Twitter } from "lucide-react";
+import { Facebook, Instagram, Youtube } from "lucide-react";
+import { FaTiktok } from "react-icons/fa";
 
 export default function Footer() {
   return (
@@ -8,13 +9,20 @@ export default function Footer() {
         {/* Brand */}
         <div>
           <h3 className="text-xl font-bold text-white mb-3">
-            Emmanuel Foundation
+            EMMANUEL SPRINGS MISSIONS AND DEVELOPMENT FOUNDATION
           </h3>
           <p className="text-sm leading-relaxed">
             Raising hope, restoring lives, and serving communities through
             compassion, missions, and empowerment.
           </p>
           <div className="flex gap-4 mt-6">
+             <Link 
+              href="https://youtube.com/@chaplainpriscillaololadeyusuf?si=VeDp9QAq4Mh2stQO" 
+              className="text-white hover:text-blue-500 transition-colors"
+              aria-label="Facebook"
+            >
+              <Youtube className="w-5 h-5" />
+            </Link>
             <Link 
               href="https://www.facebook.com/EmmanuelSprings4Life/" 
               className="text-white hover:text-blue-500 transition-colors"
@@ -30,11 +38,11 @@ export default function Footer() {
               <Instagram className="w-5 h-5" />
             </Link>
             <Link 
-              href="https://www.twitter.com/EmmanuelSprings4Life/" 
+              href="https://www.tiktok.com/@user7599526529361?_r=1&_t=ZS-92IIZ4BhjBH" 
               className="text-white hover:text-blue-400 transition-colors"
               aria-label="Twitter"
             >
-              <Twitter className="w-5 h-5" />
+              <FaTiktok className="w-5 h-5" />
             </Link>
           </div>
 
@@ -63,7 +71,7 @@ export default function Footer() {
       </div>
 
       <div className="border-t border-white/10 text-center py-6 text-sm">
-        © {new Date().getFullYear()} Emmanuel Foundation. All rights reserved.
+        © {new Date().getFullYear()} EMMANUEL SPRINGS MISSIONS AND DEVELOPMENT FOUNDATION. All rights reserved.
       </div>
     </footer>
   );

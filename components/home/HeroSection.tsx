@@ -7,7 +7,7 @@ export default function HeroSection() {
       {/* Missions */}
       <div
         className="relative bg-cover bg-center"
-        style={{ backgroundImage: "url('/hero/missions.jpg')" }}
+        style={{ backgroundImage: "url('/hero/missions.jpeg')" }}
       >
         <div className="absolute inset-0 bg-black/40" />
 
@@ -32,7 +32,7 @@ export default function HeroSection() {
       {/* Farm Gate */}
       <div
         className="relative bg-cover bg-center"
-        style={{ backgroundImage: "url('/hero/farming.jpg')" }}
+        style={{ backgroundImage: "url('/hero/farming.jpeg')" }}
       >
         <div className="absolute inset-0 bg-black/40" />
 
@@ -57,7 +57,7 @@ export default function HeroSection() {
       {/* Travels */}
       <div
         className="relative bg-cover bg-center"
-        style={{ backgroundImage: "url('/hero/travel.jpg')" }}
+        style={{ backgroundImage: "url('/hero/travel.jpeg')" }}
       >
         <div className="absolute inset-0 bg-black/40" />
 

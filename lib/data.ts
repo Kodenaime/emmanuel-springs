@@ -44,7 +44,7 @@ export const MOCK_STORIES: Story[] = [
     category: "Feeding",
     excerpt:
       "A large community received hot meals, groceries, and prayer support during our quarterly outreach.",
-    image: "/about.jpeg",
+    image: "/pic2.jpeg",
     date: "2025-02-10",
   },
   {
@@ -53,7 +53,7 @@ export const MOCK_STORIES: Story[] = [
     category: "Empowerment",
     excerpt:
       "Young adults were trained in digital skills, tailoring, and soap production to help them become self-reliant.",
-    image: "/image2.jpg",
+    image: "/image2.jpeg",
     date: "2025-03-18",
   },
   {
@@ -227,23 +227,23 @@ export interface ImpactStat {
 export const IMPACT_STATS: ImpactStat[] = [
   {
     id: "stat-1",
-    label: "Meals Served",
-    value: "3,200+",
+    label: "Street Families/Slums reached",
+    value: "100+",
   },
   {
     id: "stat-2",
-    label: "Youth Empowered",
-    value: "850+",
+    label: "Women Empowered",
+    value: "2000+",
   },
   {
     id: "stat-3",
     label: "Communities Reached",
-    value: "40+",
+    value: "200+",
   },
   {
     id: "stat-4",
     label: "Mission Trips",
-    value: "25+",
+    value: "500+",
   },
 ];
 

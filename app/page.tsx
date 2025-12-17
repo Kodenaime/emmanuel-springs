@@ -6,12 +6,14 @@ import ImpactStats from "@/components/home/ImpactStats";
 import WhatWeDo from "@/components/home/WhatWeDo";
 import { GalleryCarousel } from "@/components/layout/GalleryCarousel";
 import ObjectivesSection from "@/components/home/ObjectivesSection";
+import FoundersProfile from "@/components/home/FoundersProfile";
 
 export default function HomePage() {
   return (
     <main>
       <HeroSection />
       <AboutSection />
+      <FoundersProfile />
       <WhatWeDo />
       <ObjectivesSection />
       <ImpactStats />

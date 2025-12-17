@@ -4,6 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { cn } from "@/lib/utils";
+import Image from "next/image";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -11,11 +12,11 @@ export default function Navbar() {
 
   return (
     <header className="sticky top-0 z-50 w-full bg-cream border-b border-slate-200">
-      <div className="mx-auto flex items-center justify-between max-w-7xl px-4 py-5">
+      <div className="mx-auto flex items-center justify-between max-w-7xl px-4">
         
         {/* Logo */}
         <Link href="/" className="text-2xl font-bold text-navy">
-          Emmanuel Springs
+          <Image src="/logo.png" alt="Emmanuel Springs" width={100} height={100} />
         </Link>
 
         {/* Desktop Navigation */}
