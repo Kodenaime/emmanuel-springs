@@ -53,7 +53,7 @@ export default function WhatWeDo() {
               </div>
 
               <h3 className="text-2xl font-semibold text-navy">
-                Farm Gate
+                Missions Farmgate
               </h3>
 
               <p className="text-slate-600 leading-relaxed">
@@ -78,7 +78,7 @@ export default function WhatWeDo() {
               </div>
 
               <h3 className="text-2xl font-semibold text-navy">
-                Travels & Missions
+                Travels Across Borders
               </h3>
 
               <p className="text-slate-600 leading-relaxed">

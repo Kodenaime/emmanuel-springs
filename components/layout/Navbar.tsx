@@ -12,7 +12,10 @@ export default function Navbar() {
 
   return (
     <header className="sticky top-0 z-50 w-full bg-cream border-b border-slate-200">
-      <div className="mx-auto flex items-center justify-between max-w-7xl px-4">
+      <div className="top-nav text-center py-2 bg-gray-300 font-bold text-navy">
+        EMMANUEL SPRINGS MISSIONS AND DEVELOPMENT FOUNDATION
+      </div>
+      <div className="mx-auto flex items-center justify-between max-w-7xl px-4 py-2">
         
         {/* Logo */}
         <Link href="/" className="text-2xl font-bold text-navy">
@@ -42,19 +45,19 @@ export default function Navbar() {
                   href="/programs/missions"
                   className="block px-4 py-3 hover:bg-slate-100"
                 >
-                  Missions
+                  Community Missions
                 </Link>
                 <Link
                   href="/programs/farm"
                   className="block px-4 py-3 hover:bg-slate-100"
                 >
-                  Farm Gate
+                  Mission Farmgate
                 </Link>
                 <Link
                   href="/programs/travels"
                   className="block px-4 py-3 hover:bg-slate-100"
                 >
-                  Travels
+                  Travels Across Borders
                 </Link>
               </div>
             )}
@@ -110,13 +113,13 @@ export default function Navbar() {
             {programOpen && (
               <div className="ml-4 mt-3 flex flex-col gap-2 text-slate-700">
                 <Link href="/programs/missions" onClick={() => setOpen(false)}>
-                  Missions
+                  Community Missions
                 </Link>
                 <Link href="/programs/farm" onClick={() => setOpen(false)}>
-                  Farm Gate
+                  Mission Farmgate
                 </Link>
                 <Link href="/programs/travels" onClick={() => setOpen(false)}>
-                  Travels
+                  Travels Across Borders
                 </Link>
               </div>
             )}
@@ -128,7 +131,7 @@ export default function Navbar() {
           <Link
             href="/donate"
             onClick={() => setOpen(false)}
-            className="mt-4 inline-flex justify-center rounded-full bg-brand-red px-5 py-2 text-white font-semibold"
+            className="mt-4 inline-flex justify-center rounded-full bg-green-700 px-5 py-2 text-white font-semibold"
           >
             Donate
           </Link>

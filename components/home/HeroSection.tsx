@@ -13,7 +13,7 @@ export default function HeroSection() {
 
         <div className="relative z-10 flex h-full flex-col justify-end p-8 text-white">
           <span className="uppercase tracking-widest text-xs opacity-90">
-            Transforming Lives Together
+            Transforming Lives & Communities
           </span>
 
           <h1 className="mt-2 text-3xl md:text-4xl font-bold leading-tight">
@@ -40,9 +40,9 @@ export default function HeroSection() {
           <span className="uppercase tracking-widest text-xs opacity-90">
             Sustainable Agriculture
           </span>
-
+          
           <h1 className="mt-2 text-3xl md:text-4xl font-bold leading-tight">
-            Farm Gate
+            Missions <br /> Farmgate
           </h1>
 
           <Link
@@ -67,7 +67,7 @@ export default function HeroSection() {
           </span>
 
           <h1 className="mt-2 text-3xl md:text-4xl font-bold leading-tight">
-            Travels
+            Travels <br /> Across Borders
           </h1>
 
           <Link

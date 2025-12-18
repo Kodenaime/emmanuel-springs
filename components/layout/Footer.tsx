@@ -54,7 +54,7 @@ export default function Footer() {
           <ul className="space-y-2 text-sm">
             <li>Home</li>
             <li>Missions</li>
-            <li>Farm Gate</li>
+            <li>Farmgate</li>
             <li>Travels</li>
             <li>Resources</li>
           </ul>
