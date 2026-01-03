@@ -15,7 +15,7 @@ export default function ContactSection() {
         </div>
 
         <form
-          action="https://formspree.io/f/YOUR_FORM_ID"
+          action="https://formspree.io/f/xbdlkbla"
           method="POST"
           className="space-y-6 bg-slate-50 p-8 rounded-xl"
         >

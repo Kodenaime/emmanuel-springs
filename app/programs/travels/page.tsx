@@ -2,9 +2,7 @@ import Donate from "@/components/home/Donate";
 import { MOCK_TRIPS } from "@/lib/data";
 
 export default function TravelsPage() {
-  const missionTrips = MOCK_TRIPS.filter(
-    (trip) => trip.type === "Mission"
-  );
+  const missionTrips = MOCK_TRIPS;
 
   const commercialServices = [
     {
@@ -30,7 +28,7 @@ export default function TravelsPage() {
         {/* Page Header */}
         <header className="text-center space-y-4">
           <h1 className="text-4xl font-bold text-navy">
-            Travels & Tours
+            Missions to Benin Republic
           </h1>
           <p className="max-w-2xl mx-auto text-slate-600">
             We provide reliable commercial travel services and organize
@@ -62,9 +60,9 @@ export default function TravelsPage() {
         </section>
 
         {/* Bottom Section – Mission Trips */}
-        <section className="space-y-8">
+        <section className="space-y-8 mb-16">
           <h2 className="text-2xl font-bold text-navy">
-            Upcoming Mission Trips
+            Mission Trips
           </h2>
 
           <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
@@ -73,17 +71,10 @@ export default function TravelsPage() {
                 key={trip.id}
                 className="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition"
               >
-                <span className="inline-block mb-3 text-xs font-medium px-3 py-1 rounded-full bg-brand-red/10 text-brand-red">
-                  {trip.type}
-                </span>
-
+                
                 <h3 className="text-lg font-bold text-navy mb-2">
                   {trip.title}
-                </h3>
-
-                <p className="text-xs text-slate-500 mb-3">
-                  {new Date(trip.date).toDateString()}
-                </p>
+                </h3>                
 
                 <p className="text-sm text-slate-600">
                   {trip.description}

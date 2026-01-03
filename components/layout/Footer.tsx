@@ -19,19 +19,19 @@ export default function Footer() {
              <Link 
               href="https://youtube.com/@chaplainpriscillaololadeyusuf?si=VeDp9QAq4Mh2stQO" 
               className="text-white hover:text-blue-500 transition-colors"
-              aria-label="Facebook"
+              aria-label="Youtube"
             >
               <Youtube className="w-5 h-5" />
             </Link>
             <Link 
-              href="https://www.facebook.com/EmmanuelSprings4Life/" 
+              href="https://www.facebook.com/share/p/1G8VGVayaj/" 
               className="text-white hover:text-blue-500 transition-colors"
               aria-label="Facebook"
             >
               <Facebook className="w-5 h-5" />
             </Link>
             <Link 
-              href="https://www.instagram.com/EmmanuelSprings4Life/" 
+              href="https://www.instagram.com/transformingcommunities4life?igsh=MTJzdzIydnFrMzNxZg==" 
               className="text-white hover:text-pink-500 transition-colors"
               aria-label="Instagram"
             >
@@ -40,7 +40,7 @@ export default function Footer() {
             <Link 
               href="https://www.tiktok.com/@user7599526529361?_r=1&_t=ZS-92IIZ4BhjBH" 
               className="text-white hover:text-blue-400 transition-colors"
-              aria-label="Twitter"
+              aria-label="Tiktok"
             >
               <FaTiktok className="w-5 h-5" />
             </Link>
@@ -51,22 +51,23 @@ export default function Footer() {
         {/* Quick Links */}
         <div>
           <h4 className="text-lg font-semibold text-white mb-3">Quick Links</h4>
-          <ul className="space-y-2 text-sm">
-            <li>Home</li>
-            <li>Missions</li>
-            <li>Farmgate</li>
-            <li>Travels</li>
-            <li>Resources</li>
+          <ul className=" text-sm flex flex-col gap-2">
+            <Link href="/">Home</Link>
+            <Link href="/programs/missions">Missions</Link>
+            <Link href="/programs/farm">Farmgate</Link>
+            <Link href="/programs/travels">Travels</Link>
+            <Link href="/resources">Resources</Link>
           </ul>
         </div>
 
         {/* Contact Info */}
         <div>
           <h4 className="text-lg font-semibold text-white mb-3">Contact</h4>
-          <ul className="space-y-2 text-sm">
+          <div className="flex flex-col text-sm">
             <a href="tel:+2348126476098">Phone: +234 8126476098</a>
             <a href="mailto:emmanuelsprings4life@gmail.com">Email: emmanuelsprings4life@gmail.com</a>
-          </ul>
+            <p>Address: Challenge Expressway, Ibadan, Nigeria.</p>
+          </div>
         </div>
       </div>
 

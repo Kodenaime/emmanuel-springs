@@ -125,7 +125,7 @@ export default function DonationSection() {
                      {activeTab === "MPESA" ? "Mobile Number" : "Account Number"}
                    </p>
                    <div className="flex items-center gap-3 bg-white p-3 rounded-lg border border-slate-200 shadow-sm">
-                     <p className="text-xl md:text-2xl font-mono font-bold text-navy tracking-widest flex-grow">
+                     <p className="text-xl md:text-2xl font-mono font-bold text-navy tracking-widest grow">
                        {/* @ts-ignore */}
                        {accounts[activeTab].displayNumber || accounts[activeTab].number}
                      </p>
@@ -173,10 +173,10 @@ export default function DonationSection() {
                </div>
              </div>
 
-             <p className="text-slate-600 mb-8 flex-grow leading-relaxed">
+             <p className="text-slate-600 mb-8 grow leading-relaxed">
                Purchase a copy of our latest book, <strong>"Faith-based Community Empowerment Strategies"</strong>. 
                <br /><br />
-               This isn't just a book—it's a tool for change. Proceeds from every sale go directly towards funding our outreach to street families and orphans.
+               This isn't just a book, it's a tool for change. Proceeds from every sale go directly towards funding our outreach to street families and orphans.
              </p>
 
              <div className="mt-auto space-y-4">

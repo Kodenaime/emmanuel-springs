@@ -31,8 +31,6 @@ export interface FarmItem {
 export interface Trip {
   id: string;
   title: string;
-  type: TripType;
-  date: string;
   description: string;
 }
 
@@ -185,36 +183,23 @@ export const MOCK_FARM_ITEMS: FarmItem[] = [
 export const MOCK_TRIPS: Trip[] = [
   {
     id: "trip-1",
-    title: "Northern Nigeria Rural Missions Tour",
-    type: "Mission",
-    date: "2025-06-15",
+    title: "Three countries in one trip",
     description:
-      "A 10-day mission trip focused on evangelism, medical outreach, and food distribution.",
+      "A trip to Benin, Togo and Ghana.",
   },
   {
     id: "trip-2",
-    title: "Cross River Eco-Tourism Experience",
-    type: "Commercial",
-    date: "2025-07-20",
+    title: "Agro Tourism Tours",
     description:
-      "A guided tourism trip exploring waterfalls, wildlife, and cultural heritage sites.",
+      "A trip to Songhai.",
   },
   {
     id: "trip-3",
-    title: "Village Church Planting Journey",
-    type: "Mission",
-    date: "2025-08-05",
+    title: "Travels and Mission Exposure",
     description:
-      "A faith-focused trip aimed at planting churches and training local leaders.",
+      "A faith-focused trip aimed at enlightnening people about missions and faith.",
   },
-  {
-    id: "trip-4",
-    title: "Jos Plateau Adventure & Outreach",
-    type: "Commercial",
-    date: "2025-09-12",
-    description:
-      "A blended travel and outreach experience combining tourism with community service.",
-  },
+  
 ];
 
 
