@@ -7,6 +7,7 @@ import WhatWeDo from "@/components/home/WhatWeDo";
 import { GalleryCarousel } from "@/components/layout/GalleryCarousel";
 import ObjectivesSection from "@/components/home/ObjectivesSection";
 import FoundersProfile from "@/components/home/FoundersProfile";
+import CurrentProject from "@/components/home/CurrentProject";
 
 export default function HomePage() {
   return (
@@ -16,6 +17,7 @@ export default function HomePage() {
       <FoundersProfile />
       <WhatWeDo />
       <ObjectivesSection />
+      <CurrentProject />
       <ImpactStats />
       <FeaturedStories />
       <Donate />
